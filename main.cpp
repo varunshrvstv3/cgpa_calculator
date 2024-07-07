@@ -16,6 +16,7 @@ int main() {
                 calculateGPA();
                 break;
             case 2:
+                calculateCGPA();
                 break;
             case 4:
                 exitApplication();

@@ -13,5 +13,6 @@ void exitApplication();
 void displayMethod();
 void clearScreen();
 void calculateGPA();
+void calculateCGPA();
 
 #endif

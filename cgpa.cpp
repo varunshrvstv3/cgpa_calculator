@@ -59,6 +59,23 @@ void calculateGPA() {
 
 }
 
+void calculateCGPA() {
+    clearScreen();
+    printHeader("CGPA Calculator");
+
+    int numSemesters = static_cast<int>(inputValidation("Enter the number of semsters: "));
+    float totalGPA = 0;
+
+    for (int i=0; i<numSemesters; i++) {
+        std::stringstream ss;
+        ss << "Enter the GPA for semester " << i+1 << ": ";
+        totalGPA += inputValidation(ss.str());
+    }
+
+    std::cout << "Your CGPA is: " << std::setprecision(2) << std::fixed << totalGPA / numSemesters << std::endl;
+
+}
+
 void clearScreen() {
     system("clear");
 }
